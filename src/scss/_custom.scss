@@ -1,0 +1,43 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+
+// Colors
+
+// Start with assigning color names to specific hex values.
+$black:  #000;
+$yellow: #fff69e;
+$blue:   #302682;
+$pink:   #f297bf;
+
+
+// Create grayscale
+$gray:   #c6c6c6;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $blue;
+$brand-success:             $yellow;
+$brand-info:                $black;
+
+// Links
+$link-color: $brand-primary;
+
+// Fonts
+$font-family-sans-serif: 'Raleway', sans-serif, Arial, sans-serif;
+$font-family-serif:      'Merriweather', serif, Times, serif;
+$font-family-base:       $font-family-sans-serif;
+
+$font-weight-normal: 300;
+$font-weight-base: $font-weight-normal;
+$headings-font-weight:   600;
+
+
+$display1-weight:     600;
+$display2-weight:     600;
+$display3-weight:     600;
+$display4-weight:     600;
+
+$body-color: $black;
+$body-bg: $white;

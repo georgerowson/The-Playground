@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>BOOTSTRAP</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="bg-gray">
+
+<div class="container pt-5">
+    <div class="row justify-content-center">
+        <nav class="trigger nav" data-state="closed">
+        </nav>  
+    </div>
+</div>
+
+<div class="container pt-5">
+    <div class="row justify-content-center">
+        <nav class="trigger nav2" data-state="closed">
+        </nav>  
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <a href="#" class="btn btn-primary mt-5 toggle">Press me</a>
+    </div>
+</div> 
+
+
+    <!-- Required scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+ <script>
+    
+    $( ".toggle" ).click(function() {
+        $( ".trigger" ).each(function() {
+          var state = $( this ).attr("data-state");
+          if (state == "open") {
+              $(this).attr( "data-state", "closed" );
+          } else {
+              $(this).attr( "data-state", "open" );
+          }
+        });
+    });
+    
+</script>
+
+</body>
+</html>
+

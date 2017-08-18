@@ -1,0 +1,123 @@
+.content {
+    background-color: $yellow;
+}
+
+.slide-header {
+    background-color: lighten( $brand-info, 15%)
+}
+.segment-content {
+    padding: 5% 10%;
+}
+
+.segment {
+    border-bottom: 1px solid $brand-primary;
+}
+
+.highlighted-segment {
+    background-color: $pink;
+}
+
+.header-content {
+    padding: 8% 10%;
+}
+
+.side-layout {
+    padding-left: 130px;
+}
+
+.home-btn {
+    position: absolute;
+    left: 0;
+    margin: 20px
+}
+
+.slide-bg {
+    background-color: lighten( $brand-info, 15%)
+}
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 1;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+ 
+.m-scene .scene_element {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+  
+.m-scene .scene_element--fadein {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.m-scene .scene_element--fadeinup {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+.m-scene .scene_element--fadeinright {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+  
+.m-scene .scene_element--fadeindown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeIndown; }
+  
+.m-scene.is-exiting .scene_element {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; }
+
+
+

@@ -1,0 +1,35 @@
+.nav {
+    transition: 1s ease;
+    border-radius: 10px;    
+}
+    
+/* semantic data states! */
+.nav[data-state=closed] {
+    background: $black;
+    width: 100px;
+    height: 200px; 
+}
+
+.nav[data-state=open] {
+    background: $yellow;
+    width: 200px;
+    height: 100px;
+}
+
+.nav2 {
+    transition: 1s ease;
+    border-radius: 10px;    
+}
+    
+/* semantic data states! */
+.nav2[data-state=closed] {
+    background: $blue;
+    width: 100px;
+    height: 200px; 
+}
+
+.nav2[data-state=open] {
+    background: $pink;
+    width: 200px;
+    height: 100px;
+}
