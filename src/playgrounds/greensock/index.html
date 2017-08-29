@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html id="greensock" class="no-js" lang="en">
 
 <head>
   <!-- Required meta tags -->
@@ -11,25 +11,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Bootstrap CSS -->
-  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
 
-<div class="container">
-  <div class="row">
-
+  <div id="loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
   </div>
-</div>
 
-  <!-- Required scripts -->
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/tether.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/jquery.min.js"></script>
-  <!--CDN link for  TweenMax-->
+
+  <header id="header">
+    <h1><span>GreenSock 101</span><em>&nbsp;</em></h1>
+    <p class="intro">Your first hour with GSAP, <br /><em>make sure it is a good one</em>.</p>
+    <img src="img/petr-tichy-ihatetomatoes-blog.svg" alt="GreenSock 101 - Getting started with GreenSock in 60 minutes.">
+
+    <h2>Table Of Content</h2>
+    <ul class="list">
+      <li><a href="#"><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
+      <li><a href="#"><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
+      <li><a href="#"><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
+      <li><a href="#"><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
+      <li><a href="#"><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
+    </ul>
+  </header>
+
+<!-- <div class="container">
+  <div class="row mt-5 pt-5 justify-content-center">
+  <button id="btnPlay" class="btn btn-primary col-sm-4">play</button>
+  <button id="btnPause" class="btn btn-primary col-sm-4">pause</button>
+  <button id="btnResume" class="btn btn-primary col-sm-4">resume</button>
+  <button id="btnReverse" class="btn btn-primary col-sm-4">reverse</button>
+  <button id="btnSpeedUp" class="btn btn-primary col-sm-4">speed up</button>
+  <button id="btnSlowDown" class="btn btn-primary col-sm-4">slow down</button>
+  <button id="btnSeek" class="btn btn-primary col-sm-4">seek 1 sec</button>
+  <button id="btnProgress" class="btn btn-primary col-sm-4">go to 50%</button>
+  <button id="btnRestart" class="btn btn-primary col-sm-4">restart</button>
+</div> -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+
+
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/tether.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
